@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+html {
+  font-size: 65%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.fab {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.fabBtn {
+  width: 80px;
+  height: 50px;
+  background: black;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 20%;
+  justify-content: center;
+  align-content: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background: #000;
+  padding-top: 20px;
+  margin: auto;
+  border-radius: 6px;
+  width: 88%;
+  margin-top: 200px;
+}
+.close {
+  cursor: pointer;
+  float: right;
+}
+.imageWrapper img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+.cover {
+  background-color: lightgrey;
+  width: 24%;
+  height: 70%;
+  /* position: relative; */
+  /* border-radius: 1em; */
+  box-shadow: 0 0.188em 1.55em rgb(156, 156, 156);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-top: 20px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 315px;
+}
+.button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 20px;
+}
+.inputBox {
+  padding: 7px;
+  display: block;
+  border: 1px solid black;
+  width: 440px;
+}
+.button-div-main {
+  display: flex;
+  justify-content: center;
+}
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-container {
+  border-radius: 0.5rem;
+}
+.inputdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputstyle {
+  margin-bottom: 10px;
+}
+.canvas-box {
+  height: 580px;
+}
+
+.navbar-bg {
+  background-color: var(--bgcolor);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+}
+.navbar li {
+  padding: 0 2rem;
+}
+.navbar li a {
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+
+header {
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+}
+.main-hero-container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 3rem 0 5rem 0;
+  font-weight: lighter;
+  width: 75%;
+}
+.main-herosection-images img {
+  border-radius: 30px;
+}
+.work-para {
+  font-size: 20px;
+}
+
+footer {
+  padding: 5rem 0;
+  background-color: #182334;
+  color: #fff;
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+footer li:hover {
+  color: var(--primary-color);
+}
+
+footer .fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  width: 0rem;
+  height: 0rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.footer .feedback-button {
+  position: absolute;
+  right: 10;
+}
+
+footer .fontawesome-style:hover {
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.emoji-div {
+  font-size: 40px;
+  cursor: pointer;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
